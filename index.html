@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum</title>
+  <link rel="stylesheet" href="./scss/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <span>quantum</span>
+      </div>
+      <form class="header__search" type='GET'>
+        <button type="submit" class="header__search-button">
+          <img src="./img/search-icon.svg" alt="">
+        </button>
+        <input class="header__search-input" type="text" placeholder="Search goods">
+        <div class="header__search-dropdown">
+          <div data-select class="header-select">
+            <div data-select-title class="header-select__title">category</div>
+            <ul class="header-select__dropdown hidden">
+              <li data-select-item = 'Mobile' class="header-select__dropdown-item">Mobile</li>
+              <li data-select-item = 'Tablet' class="header-select__dropdown-item">Tablet</li>
+              <li data-select-item = 'Laptop' class="header-select__dropdown-item">Laptop</li>
+            </ul>
+          </div>
+          <select name="select" class="hidden" id="select-real">
+            <option value="none">CATEGORY</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Laptop">Laptop</option>
+          </select>
+        </div>
+      </form>
+      <div class="header__buttons">
+      </div>
+    </div>
+  </header>
+  <script src="./js/main.js"></script>
+</body>
+</html>
