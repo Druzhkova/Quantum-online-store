@@ -10,9 +10,7 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <div class="header__logo">
-        <span>quantum</span>
-      </div>
+      <a class="header__logo" href="#">quantum</a>
       <form class="header__search" type='GET'>
         <button type="submit" class="header__search-button">
           <img src="./img/search-icon.svg" alt="">
@@ -35,10 +33,86 @@
           </select>
         </div>
       </form>
-      <div class="header__buttons">
+      <div class="header__links">
+        <!-- Card link -->
+        <a href='#' class="header-link header-link--notify">
+          <span class="header-link__icon">
+            <img src="./img/shopping-cart-icon.svg" alt="Card">
+          </span>
+          <span class="header-link__text">2 Items</span>
+        </a>
+        <!-- Wishlist link -->
+        <a href='#' class="header-link">
+          <span class="header-link__icon">
+            <img src="./img/favorite-border-icon.svg" alt="Wishlist link">
+            </svg>
+          </span>
+          <span class="header-link__text">Wish list</span>
+        </a>
+        <!-- User link -->
+        <a href='#' class="header-link">
+          <span class="header-link__icon">
+            <img src="./img/account_circle-icon.svg" alt="Account">          
+          </span>
+          <span class="header-link__text">Sing in</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__nav">
+      <div class="header-nav container">
+        <div class="header-nav__categories">
+          <a class="header-menu-link" href="#">
+            <img class="header-menu-link__icon" src="./img/menu-icon.svg" alt="">
+            <span class="header-menu-link__text">All categories</span>
+          </a>
+        </div>
+        <div class="header-nav__deals">
+          <a class="header-nav__link" href="#">Super Deals</a>
+          <a class="header-nav__link" href="#">Featured Brands</a>
+          <a class="header-nav__link" href="#">Collections</a>
+          <a class="header-nav__link" href="#">Bestselling</a>                              
+        </div>
+        <!-- Header nav select -->
+        <div class="header-nav__select">
+          <!-- item HELP -->
+          <div class="header-nav__select-item">
+            <!-- Dropdown nav -->
+            <div class="nav-dropdown">
+              <a href="#" class="nav-dropdown__title">help</a>
+              <div class="nav-dropdown__dropdown">
+                <a href="#" class="nav-dropdown__item">F.A.Q</a>
+                <a href="#" class="nav-dropdown__item">Payment</a>
+                <a href="#" class="nav-dropdown__item">Deliveru</a>
+              </div>
+            </div>
+          </div>
+          <!-- item USD -->
+          <div class="header-nav__select-item">
+            <!-- Dropdown nav -->
+            <div class="nav-dropdown">
+              <a href="#" class="nav-dropdown__title nav-dropdown__title--border">USD</a>
+              <div class="nav-dropdown__dropdown">
+                <a href="#" class="nav-dropdown__item">RUB</a>
+                <a href="#" class="nav-dropdown__item">EUR</a>
+              </div>
+            </div>
+          </div>
+          <!-- item LANGUAGE -->
+          <div class="header-nav__select-item">
+            <!-- Dropdown nav -->
+            <div class="nav-dropdown">
+              <a href="#" class="nav-dropdown__title">language</a>
+              <div class="nav-dropdown__dropdown">
+                <a href="#" class="nav-dropdown__item">English</a>
+                <a href="#" class="nav-dropdown__item">Russian</a>
+                <a href="#" class="nav-dropdown__item">German</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-  <script src="./js/main.js"></script>
+  <script src="./js/header-select.js"></script>
 </body>
 </html>

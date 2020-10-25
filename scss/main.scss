@@ -1,7 +1,12 @@
 // Base
+@import './base/variables';
 @import './base/base';
 @import './base/reset';
 
 // Blocks
 @import './blocks/header';
 @import './blocks/header-select';
+@import './blocks/header-links';
+@import './blocks/header-nav';
+@import './blocks/header-menu-link';
+@import './blocks/nav-dropdown';

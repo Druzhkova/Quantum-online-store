@@ -1,6 +1,5 @@
 .header {
   background: #fff;
-  height: 300px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -10,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 41px 0 23px;
+  padding: 30px 41px 30px 23px;
 }
 
 .header__logo {
@@ -49,6 +48,10 @@
   display: flex;
 }
 
-.header__buttons {
-  background-color: lightsalmon;
+.header__links {
+  display: flex;
+}
+
+.header__nav {
+  border-top: 2px solid #f5f5f5;
 }
