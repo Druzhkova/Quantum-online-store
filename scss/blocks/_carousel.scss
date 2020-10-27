@@ -1,0 +1,85 @@
+.carousel {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel__item {
+  position: relative;
+  height: 330px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.carousel__item-title {
+  position: absolute;
+  top: 30%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.carousel__item-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+}
+
+.carousel__left-arrow {
+  background: transparent;
+  position: absolute;
+  top: 135px;
+  left: 65px;
+
+  &:hover {
+    filter: invert(81%);
+  }
+}
+
+.carousel__right-arrow {
+  background: transparent;
+  position: absolute;
+  top: 135px;
+  right: 65px;
+
+  &:hover {
+    filter: invert(81%);
+  }
+}
+
+.carousel__item .opacity {
+    opacity: 0;
+}
+
+.carousel__lines {
+  position: absolute;
+  top: 80%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.rectangle {
+  width: 68px;
+  height: 2px;
+  background: #E6E6E6;
+  opacity: 0.3;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.rectangle.active-rectangle {
+  width: 68px;
+  height: 2px;
+  background: #FFFFFF;
+  opacity: 0.7;
+}

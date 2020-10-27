@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+  margin-bottom: 30px;
   background: #fff;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
@@ -459,5 +460,102 @@ h1, h2, h3, h4, h5, h6 {
 .nav-dropdown__title--border {
   border-right: 2px solid #f5f5f5;
   border-left: 2px solid #f5f5f5;
+}
+
+.carousel {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel__item {
+  position: relative;
+  height: 330px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.carousel__item-title {
+  position: absolute;
+  top: 30%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.carousel__item-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+}
+
+.carousel__left-arrow {
+  background: transparent;
+  position: absolute;
+  top: 135px;
+  left: 65px;
+}
+
+.carousel__left-arrow:hover {
+  -webkit-filter: invert(81%);
+          filter: invert(81%);
+}
+
+.carousel__right-arrow {
+  background: transparent;
+  position: absolute;
+  top: 135px;
+  right: 65px;
+}
+
+.carousel__right-arrow:hover {
+  -webkit-filter: invert(81%);
+          filter: invert(81%);
+}
+
+.carousel__item .opacity {
+  opacity: 0;
+}
+
+.carousel__lines {
+  position: absolute;
+  top: 80%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rectangle {
+  width: 68px;
+  height: 2px;
+  background: #E6E6E6;
+  opacity: 0.3;
+}
+
+.rectangle:not(:last-child) {
+  margin-right: 30px;
+}
+
+.rectangle.active-rectangle {
+  width: 68px;
+  height: 2px;
+  background: #FFFFFF;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */
