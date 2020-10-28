@@ -13,7 +13,7 @@
       <h1><a class="header__logo" href="#">quantum</a></h1>
       <form class="header__search" type='GET'>
         <button type="submit" class="header__search-button">
-          <img src="./img/search-icon.svg" alt="">
+          <img src="./img/header/search-icon.svg" alt="">
         </button>
         <input class="header__search-input" type="text" placeholder="Search goods">
         <div class="header__search-dropdown">
@@ -23,6 +23,7 @@
               <li data-select-item = 'Mobile' class="header-select__dropdown-item">Mobile</li>
               <li data-select-item = 'Tablet' class="header-select__dropdown-item">Tablet</li>
               <li data-select-item = 'Laptop' class="header-select__dropdown-item">Laptop</li>
+              <li data-select-item = 'TV & Video' class="header-select__dropdown-item">TV & Video</li>
             </ul>
           </div>
           <select name="select" class="hidden" id="select-real">
@@ -30,6 +31,7 @@
             <option value="Mobile">Mobile</option>
             <option value="Tablet">Tablet</option>
             <option value="Laptop">Laptop</option>
+            <option value="TV & Video">TV & Video</option>
           </select>
         </div>
       </form>
@@ -37,14 +39,14 @@
         <!-- Card link -->
         <a href='#' class="header-link header-link--notify">
           <span class="header-link__icon">
-            <img src="./img/shopping-cart-icon.svg" alt="Card">
+            <img src="./img/header/shopping-cart-icon.svg" alt="Card">
           </span>
           <span class="header-link__text">2 Items</span>
         </a>
         <!-- Wishlist link -->
         <a href='#' class="header-link">
           <span class="header-link__icon">
-            <img src="./img/favorite-border-icon.svg" alt="Wishlist link">
+            <img src="./img/header/favorite-border-icon.svg" alt="Wishlist link">
             </svg>
           </span>
           <span class="header-link__text">Wish list</span>
@@ -52,7 +54,7 @@
         <!-- User link -->
         <a href='#' class="header-link">
           <span class="header-link__icon">
-            <img src="./img/account_circle-icon.svg" alt="Account">          
+            <img src="./img/header/account_circle-icon.svg" alt="Account">          
           </span>
           <span class="header-link__text">Sing in</span>
         </a>
@@ -62,7 +64,7 @@
       <div class="header-nav container">
         <div class="header-nav__categories">
           <a class="header-menu-link" href="#">
-            <img class="header-menu-link__icon" src="./img/menu-icon.svg" alt="">
+            <img class="header-menu-link__icon" src="./img/header/menu-icon.svg" alt="">
             <span class="header-menu-link__text">All categories</span>
           </a>
         </div>
@@ -119,17 +121,50 @@
       <div class="carousel__item">
         <!-- <img src="" alt=""> -->
       </div>
-      <h2 class="carousel__item-title">The Universe Through A Child S Eyes</h2>
+      <h2 class="carousel__item-title">The universe through a child eyes</h2>
       <p class="carousel__item-text">Start sales</p>
       <!-- <div class="carousel-control"> -->
-      <button class="carousel__left-arrow"><img src="./img/left-arrow.svg" alt=""></button>
-      <button class="carousel__right-arrow"><img src="./img/right-arrow.svg" alt=""></button>
+      <button class="carousel__left-arrow"><img src="./img/header/left-arrow.svg" alt=""></button>
+      <button class="carousel__right-arrow"><img src="./img/header/right-arrow.svg" alt=""></button>
       <!-- </div> -->
       <div class="carousel__lines">
       </div>
     </section>
+    <section class="promo">
+      <div class="promo__col">
+        <a href="#" class="promo__link">
+          <div class="promo__content">
+            <h4 class="promo__title">Astronomy or Astrology</h4>
+            <p class="promo__subtitle">Start sales</p>
+            <img class="promo__img" src="./img/block-promo/headphones.png" alt="Headphones">
+          </div>
+        </a>
+      </div>
+      <div class="promo__col">
+        <a href="#" class="promo__link">
+          <div class="promo__content promo__content--background-img">
+            <h4 class="promo__title">The basics of buying a telescope</h4>
+            <p class="promo__subtitle">Astronomy or astrology</p>
+          </div>
+        </a>
+      </div>
+      <div class="promo__col promo__col--small">
+        <a href="#" class="promo__link">
+          <div class="promo__content promo__content--small">
+            <img class="promo__img-cell" src="./img/block-promo/pencil.png">
+            <h4 class="promo__title-cell">Getting free publicity</br> for your business</h4>
+          </div>
+        </a>
+        <a href="#" class="promo__link">
+          <div class="promo__content promo__content--small">
+            <img class="promo__img-cell" src="./img/block-promo/watch.png">
+            <h4 class="promo__title-cell">How plasma tvs and</br>lcd tvs differ</h4>
+          </div>
+        </a>
+      </div>
+    </section>
   </main>
-  <script src="./js/header-select.js"></script>
+  <script src="./js/dropdown.js"></script>
   <script src="./js/carousel.js"></script>
 </body>
 </html>

@@ -178,7 +178,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-select {
   position: relative;
-  width: 100%;
 }
 
 .header-select__title {
@@ -200,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 11px;
   height: 8px;
-  background: url("../img/arrow-icon.svg") no-repeat center;
+  background: url("../img/header/arrow-icon.svg") no-repeat center;
 }
 
 .header-select__dropdown {
@@ -409,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 11px;
   height: 8px;
-  background: url("../img/arrow-icon.svg") no-repeat center;
+  background: url("../img/header/arrow-icon.svg") no-repeat center;
 }
 
 .nav-dropdown__title:hover::after {
@@ -467,7 +466,6 @@ h1, h2, h3, h4, h5, h6 {
 .carousel {
   position: relative;
   margin-bottom: 30px;
-  width: 100%;
   text-align: center;
 }
 
@@ -559,5 +557,131 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   background: #FFFFFF;
   opacity: 0.7;
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.promo__col {
+  width: 350px;
+}
+
+.promo__col:not(:last-child) {
+  margin-right: 30px;
+}
+
+.promo__content {
+  padding: 30px;
+  height: 330px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+  background: #fff;
+}
+
+.promo__content .promo__title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #666666;
+}
+
+.promo__content .promo__subtitle {
+  font-size: 14px;
+  color: #666666;
+  opacity: 0.5;
+}
+
+.promo__content:hover {
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+}
+
+.promo__link {
+  display: block;
+}
+
+.promo__content--background-img {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url("../img/block-promo/smart-watch.jpg") no-repeat center #3b4b48;
+  padding-bottom: 45px;
+}
+
+.promo__content--background-img .promo__title {
+  color: #fff;
+}
+
+.promo__content--background-img .promo__subtitle {
+  color: #fff;
+}
+
+.promo__col--small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.promo__content--small {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 20px;
+  height: 150px;
+  text-align: left;
+}
+
+.promo__content--small .promo__img-cell {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 116px;
+  margin-right: 20px;
+}
+
+.promo__content--small .promo__title-cell {
+  color: #666666;
+  font-weight: 500;
+  line-height: 2;
 }
 /*# sourceMappingURL=main.css.map */

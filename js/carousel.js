@@ -1,8 +1,8 @@
 
 let carouselSlide = [
-  `<img src="./img/slide-01.jpg">`,
-  `<img src="./img/slide-02.jpg">`,
-  `<img src="./img/slide-03.jpg">`
+  `<img src="./img/carousel/slide-01.jpg">`,
+  `<img src="./img/carousel/slide-02.jpg">`,
+  `<img src="./img/carousel/slide-03.jpg">`
 ];
 const carouselItem = document.querySelector('.carousel__item');
 const rectangleContainer = document.querySelector('.carousel__lines');

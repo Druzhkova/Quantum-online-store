@@ -4,10 +4,11 @@
 @import './base/reset';
 
 // Blocks
-@import './blocks/header';
-@import './blocks/header-select';
-@import './blocks/header-links';
-@import './blocks/header-nav';
-@import './blocks/header-menu-link';
-@import './blocks/nav-dropdown';
-@import './blocks/carousel';
+@import './blocks/header/header';
+@import './blocks/header/header-select';
+@import './blocks/header/header-links';
+@import './blocks/header/header-nav';
+@import './blocks/header/header-menu-link';
+@import './blocks/header/nav-dropdown';
+@import './blocks/carousel/carousel';
+@import './blocks/block-promo/block-promo';
